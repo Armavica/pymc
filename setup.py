@@ -65,10 +65,11 @@ if __name__ == "__main__":
         url=URL,
         long_description=LONG_DESCRIPTION,
         long_description_content_type="text/x-rst",
-        packages=find_packages(),
+        packages=find_packages(where="src"),
         # because of an upload-size limit by PyPI, we're temporarily removing docs from the tarball.
         # Also see MANIFEST.in
         # package_data={'docs': ['*']},
+        package_dir={"": "src"},
         include_package_data=True,
         classifiers=classifiers,
         python_requires=">=3.8",
