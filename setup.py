@@ -53,6 +53,8 @@ with open(REQUIREMENTS_FILE) as f:
 
 test_reqs = ["pytest", "pytest-cov"]
 
+tests = [f"pymc.{pkg}" for pkg in find_packages()]
+
 if __name__ == "__main__":
     setup(
         name="pymc",
@@ -65,11 +67,11 @@ if __name__ == "__main__":
         url=URL,
         long_description=LONG_DESCRIPTION,
         long_description_content_type="text/x-rst",
-        packages=find_packages(where="src"),
+        packages=find_packages(where="src") + tests,
         # because of an upload-size limit by PyPI, we're temporarily removing docs from the tarball.
         # Also see MANIFEST.in
         # package_data={'docs': ['*']},
-        package_dir={"": "src"},
+        package_dir={"": "src"} | {pkg: pkg[5:].replace(".", "/") for pkg in tests},
         classifiers=classifiers,
         python_requires=">=3.8",
         install_requires=install_reqs,
