@@ -70,7 +70,6 @@ if __name__ == "__main__":
         # Also see MANIFEST.in
         # package_data={'docs': ['*']},
         package_dir={"": "src"},
-        include_package_data=True,
         classifiers=classifiers,
         python_requires=">=3.8",
         install_requires=install_reqs,
