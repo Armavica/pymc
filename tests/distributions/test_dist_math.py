@@ -37,8 +37,8 @@ from pymc.distributions.dist_math import (
 )
 from pymc.logprob.utils import ParameterValueError
 from pymc.pytensorf import floatX
-from tests.checks import close_to
-from tests.helpers import verify_grad
+from pymc.tests.checks import close_to
+from pymc.tests.helpers import verify_grad
 
 
 @pytest.mark.parametrize(

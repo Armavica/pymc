@@ -28,7 +28,7 @@ import pymc as pm
 
 from pymc.data import is_minibatch
 from pymc.pytensorf import GeneratorOp, floatX
-from tests.helpers import SeededTest
+from pymc.tests.helpers import SeededTest
 
 
 class TestData(SeededTest):

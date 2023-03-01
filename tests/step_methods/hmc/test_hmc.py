@@ -24,8 +24,8 @@ from pymc.blocking import DictToArrayBijection, RaveledVars
 from pymc.pytensorf import floatX
 from pymc.step_methods.hmc import HamiltonianMC
 from pymc.step_methods.hmc.base_hmc import BaseHMC
-from tests import models
-from tests.helpers import RVsAssignmentStepsTester, StepMethodTester
+from pymc.tests import models
+from pymc.tests.helpers import RVsAssignmentStepsTester, StepMethodTester
 
 
 class TestStepHamiltonianMC(StepMethodTester):

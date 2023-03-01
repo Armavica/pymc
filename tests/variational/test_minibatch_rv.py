@@ -20,9 +20,9 @@ from scipy import stats as st
 import pymc as pm
 
 from pymc import Normal, draw
+from pymc.tests.helpers import select_by_precision
+from pymc.tests.test_data import gen1, gen2
 from pymc.variational.minibatch_rv import create_minibatch_rv
-from tests.helpers import select_by_precision
-from tests.test_data import gen1, gen2
 
 
 class TestMinibatchRandomVariable:

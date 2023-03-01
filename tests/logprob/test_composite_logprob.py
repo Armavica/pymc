@@ -41,8 +41,8 @@ import scipy.stats as st
 
 from pymc.logprob.censoring import MeasurableClip
 from pymc.logprob.rewriting import construct_ir_fgraph
-from tests.helpers import assert_no_rvs
-from tests.logprob.utils import joint_logprob
+from pymc.tests.helpers import assert_no_rvs
+from pymc.tests.logprob.utils import joint_logprob
 
 
 def test_scalar_clipped_mixture():

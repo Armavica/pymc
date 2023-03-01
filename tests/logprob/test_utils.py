@@ -57,8 +57,8 @@ from pymc.logprob.utils import (
     rvs_to_value_vars,
     walk_model,
 )
-from tests.helpers import assert_no_rvs
-from tests.logprob.utils import create_pytensor_params, scipy_logprob_tester
+from pymc.tests.helpers import assert_no_rvs
+from pymc.tests.logprob.utils import create_pytensor_params, scipy_logprob_tester
 
 
 def test_walk_model():

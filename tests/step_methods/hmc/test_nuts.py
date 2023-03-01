@@ -25,8 +25,8 @@ import pymc as pm
 from pymc.exceptions import SamplingError
 from pymc.pytensorf import floatX
 from pymc.step_methods.hmc import NUTS
-from tests import sampler_fixtures as sf
-from tests.helpers import RVsAssignmentStepsTester, StepMethodTester
+from pymc.tests import sampler_fixtures as sf
+from pymc.tests.helpers import RVsAssignmentStepsTester, StepMethodTester
 
 
 class TestNUTSUniform(sf.NutsFixture, sf.UniformFixture):

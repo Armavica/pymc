@@ -43,8 +43,8 @@ import scipy.stats as st
 
 from pymc.logprob import factorized_joint_logprob
 from pymc.logprob.transforms import LogTransform, TransformValuesRewrite
-from tests.helpers import assert_no_rvs
-from tests.logprob.utils import joint_logprob
+from pymc.tests.helpers import assert_no_rvs
+from pymc.tests.logprob.utils import joint_logprob
 
 
 @pytensor.config.change_flags(compute_test_value="raise")

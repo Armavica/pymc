@@ -22,7 +22,7 @@ import pytensor
 import pytest
 
 from pymc.backends import base
-from tests import models
+from pymc.tests import models
 
 
 class ModelBackendSetupTestCase:

@@ -15,8 +15,8 @@ import warnings
 
 import numpy as np
 
+from pymc.tests import models
 from pymc.tuning import scaling
-from tests import models
 
 
 def test_adjust_precision():

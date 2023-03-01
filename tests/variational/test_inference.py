@@ -25,9 +25,9 @@ import pymc as pm
 import pymc.variational.opvi as opvi
 
 from pymc.pytensorf import intX
+from pymc.tests import models
 from pymc.variational.inference import ADVI, ASVGD, SVGD, FullRankADVI
 from pymc.variational.opvi import NotImplementedInference
-from tests import models
 
 pytestmark = pytest.mark.usefixtures("strict_float32", "seeded_test")
 

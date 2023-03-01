@@ -21,7 +21,7 @@ from pymc.distributions import Dirichlet, Normal
 from pymc.distributions.transforms import log
 from pymc.model import Model
 from pymc.stats.log_likelihood import compute_log_likelihood
-from tests.distributions.test_multivariate import dirichlet_logpdf
+from pymc.tests.distributions.test_multivariate import dirichlet_logpdf
 
 
 class TestComputeLogLikelihood:

@@ -15,8 +15,8 @@
 import pytest
 
 from pymc.step_methods.slicer import Slice
-from tests import sampler_fixtures as sf
-from tests.helpers import RVsAssignmentStepsTester, StepMethodTester
+from pymc.tests import sampler_fixtures as sf
+from pymc.tests.helpers import RVsAssignmentStepsTester, StepMethodTester
 
 
 class TestSliceUniform(sf.SliceFixture, sf.UniformFixture):

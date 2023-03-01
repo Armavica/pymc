@@ -26,7 +26,7 @@ import pymc as pm
 from pymc.backends.base import MultiTrace
 from pymc.pytensorf import floatX
 from pymc.smc.kernels import IMH, systematic_resampling
-from tests.helpers import SeededTest, assert_random_state_equal
+from pymc.tests.helpers import SeededTest, assert_random_state_equal
 
 
 class TestSMC(SeededTest):

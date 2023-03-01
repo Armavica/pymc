@@ -50,8 +50,8 @@ from pymc.logprob.scan import (
     convert_outer_out_to_in,
     get_random_outer_outputs,
 )
-from tests.helpers import assert_no_rvs
-from tests.logprob.utils import joint_logprob
+from pymc.tests.helpers import assert_no_rvs
+from pymc.tests.logprob.utils import joint_logprob
 
 
 def create_inner_out_logp(value_map):

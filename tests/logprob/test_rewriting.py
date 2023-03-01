@@ -52,7 +52,7 @@ from pytensor.tensor.subtensor import (
 
 from pymc.logprob.rewriting import local_lift_DiracDelta
 from pymc.logprob.utils import DiracDelta, dirac_delta
-from tests.logprob.utils import joint_logprob
+from pymc.tests.logprob.utils import joint_logprob
 
 
 def test_local_lift_DiracDelta():

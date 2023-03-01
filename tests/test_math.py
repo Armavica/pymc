@@ -39,7 +39,7 @@ from pymc.math import (
     softmax,
 )
 from pymc.pytensorf import floatX
-from tests.helpers import SeededTest, verify_grad
+from pymc.tests.helpers import SeededTest, verify_grad
 
 
 def test_kronecker():

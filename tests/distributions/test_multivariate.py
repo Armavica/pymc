@@ -42,7 +42,7 @@ from pymc.logprob.utils import ParameterValueError
 from pymc.math import kronecker
 from pymc.pytensorf import compile_pymc, floatX, intX
 from pymc.sampling.forward import draw
-from tests.distributions.util import (
+from pymc.tests.distributions.util import (
     BaseTestDistributionRandom,
     Domain,
     Nat,
@@ -57,7 +57,7 @@ from tests.distributions.util import (
     pymc_random,
     seeded_numpy_distribution_builder,
 )
-from tests.helpers import select_by_precision
+from pymc.tests.helpers import select_by_precision
 
 
 def betafn(a):

@@ -45,10 +45,10 @@ from pymc.exceptions import ImputationWarning, ShapeError, ShapeWarning
 from pymc.logprob.joint_logprob import joint_logp
 from pymc.logprob.transforms import IntervalTransform
 from pymc.model import Point, ValueGradFunction, modelcontext
+from pymc.tests.helpers import SeededTest
+from pymc.tests.models import simple_model
 from pymc.util import _FutureWarningValidatingScratchpad
 from pymc.variational.minibatch_rv import MinibatchRandomVariable
-from tests.helpers import SeededTest
-from tests.models import simple_model
 
 
 class NewModel(pm.Model):

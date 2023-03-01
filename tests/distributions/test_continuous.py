@@ -32,7 +32,7 @@ from pymc.logprob.abstract import logcdf
 from pymc.logprob.joint_logprob import logp
 from pymc.logprob.utils import ParameterValueError
 from pymc.pytensorf import floatX
-from tests.distributions.util import (
+from pymc.tests.distributions.util import (
     BaseTestDistributionRandom,
     Circ,
     Domain,
@@ -49,8 +49,8 @@ from tests.distributions.util import (
     seeded_numpy_distribution_builder,
     seeded_scipy_distribution_builder,
 )
-from tests.helpers import select_by_precision
-from tests.logprob.utils import create_pytensor_params, scipy_logprob_tester
+from pymc.tests.helpers import select_by_precision
+from pymc.tests.logprob.utils import create_pytensor_params, scipy_logprob_tester
 
 try:
     from polyagamma import polyagamma_cdf, polyagamma_pdf, random_polyagamma

@@ -45,8 +45,8 @@ from pymc.step_methods import (
     Metropolis,
     Slice,
 )
-from tests.helpers import SeededTest, fast_unstable_sampling_mode
-from tests.models import simple_init
+from pymc.tests.helpers import SeededTest, fast_unstable_sampling_mode
+from pymc.tests.models import simple_init
 
 
 class TestInitNuts(SeededTest):

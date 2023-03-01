@@ -63,8 +63,8 @@ from pymc.logprob.transforms import (
     TransformValuesRewrite,
     transformed_variable,
 )
-from tests.helpers import assert_no_rvs
-from tests.logprob.utils import joint_logprob
+from pymc.tests.helpers import assert_no_rvs
+from pymc.tests.logprob.utils import joint_logprob
 
 
 class DirichletScipyDist:

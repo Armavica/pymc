@@ -62,13 +62,13 @@ from pymc.sampling.forward import (
 )
 from pymc.sampling.mcmc import sample
 from pymc.step_methods import Metropolis
-from tests.distributions.util import (
+from pymc.tests.distributions.util import (
     Domain,
     Simplex,
     assert_moment_is_expected,
     pymc_random,
 )
-from tests.helpers import SeededTest
+from pymc.tests.helpers import SeededTest
 
 
 def generate_normal_mixture_data(w, mu, sigma, size=1000):

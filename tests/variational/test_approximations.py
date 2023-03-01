@@ -18,8 +18,8 @@ import pytest
 
 import pymc as pm
 
+from pymc.tests import models
 from pymc.variational.approximations import Empirical, MeanField
-from tests import models
 
 
 def test_empirical_does_not_support_inference_data():

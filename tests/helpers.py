@@ -31,8 +31,8 @@ from pytensor.tensor.random.op import RandomVariable
 import pymc as pm
 
 from pymc.pytensorf import local_check_parameter_to_ninf_switch
-from tests.checks import close_to
-from tests.models import mv_simple, mv_simple_coarse
+from pymc.tests.checks import close_to
+from pymc.tests.models import mv_simple, mv_simple_coarse
 
 
 class SeededTest:

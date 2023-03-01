@@ -36,7 +36,7 @@ from pymc.logprob.abstract import logcdf
 from pymc.logprob.joint_logprob import joint_logp, logp
 from pymc.logprob.utils import ParameterValueError
 from pymc.pytensorf import compile_pymc, floatX, intX
-from tests.helpers import SeededTest, select_by_precision
+from pymc.tests.helpers import SeededTest, select_by_precision
 
 
 def product(domains, n_samples=-1):

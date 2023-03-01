@@ -20,6 +20,7 @@ import pytest
 
 import pymc as pm
 
+from pymc.tests.helpers import not_raises
 from pymc.variational import opvi
 from pymc.variational.approximations import (
     Empirical,
@@ -29,7 +30,6 @@ from pymc.variational.approximations import (
     MeanField,
     MeanFieldGroup,
 )
-from tests.helpers import not_raises
 
 
 def test_discrete_not_allowed():
